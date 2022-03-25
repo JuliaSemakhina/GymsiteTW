@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>The Power Gym</title>
   </head>
 
@@ -113,7 +114,7 @@
             class="w-full h-full absolute opacity-75 bg-black"
           ></span>
         </div>
-        <div class="container relative mx-auto">
+        <div class="container relative mx-auto" data-aos="fade-up">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div>
@@ -153,14 +154,14 @@
         
         <div class="container mx-auto px-4">
           <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4" data-aos="fade-right">
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
                 src="img/gym1.jpg"
               />
             </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="fade-left">
               <div class="md:pr-12">
                 <small class="text-orange-500">About our Company</small>
                 <h3 class="text-4xl uppercase font-bold">Safe body building</h3>
@@ -239,7 +240,8 @@
           <div class="flex flex-wrap">
 
             <!-- Card One -->
-            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4"
+            data-aos="flip-left">
               <div class="px-6">
                 <img
                   alt="..."
@@ -257,7 +259,7 @@
             </div>
 
             <!-- Card Two -->
-            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4" data-aos="flip-left">
               <div class="px-6">
                 <img
                   alt="..."
@@ -275,7 +277,7 @@
             </div>
 
             <!-- Card Three -->
-            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4" data-aos="flip-left">
               <div class="px-6">
                 <img
                   alt="..."
@@ -334,7 +336,7 @@
           <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
             <div class="w-full lg:w-6/12 px-4">
               <div
-                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300" data-aos="fade-up-right"
               >
                 <div class="flex-auto p-5 lg:p-10 bg-orange-500 text-white">
                   <h4 class="text-2xl font-semibold">Want to work with us?</h4>
@@ -454,6 +456,14 @@
         </div>
       </div>
     </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      delay: 200,
+      once: false
+    });
+  </script>
   </body>
 
   <script>
@@ -462,5 +472,5 @@
       document.getElementById(collapseID).classList.toggle("block");
     }
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </html>
